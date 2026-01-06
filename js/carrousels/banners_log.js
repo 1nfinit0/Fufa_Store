@@ -27,7 +27,8 @@ export function loadBannerCarousel() {
   banners.forEach((banner, i) => {
     const slide = document.createElement('a');
     slide.className = 'carousel-slide';
-    slide.href = `${BASE_PATH}producto.html?id=${encodeURIComponent(banner.id)}`;
+    // slide.href = `${BASE_PATH}producto.html?id=${encodeURIComponent(banner.id)}`;
+    slide.href = '#'; // Placeholder link
     slide.setAttribute('aria-label', banner.title);
 
     const img = document.createElement('img');
@@ -43,11 +44,11 @@ export function loadBannerCarousel() {
     info.innerHTML = `
       <h3>${banner.name}</h3>
       <p>${banner.description}</p>
-      <span class="price">S/ ${banner.price}</span>
+      <!-- <span class="price">S/ ${banner.price}</span> -->
     `;
 
     slide.appendChild(img);
-    slide.appendChild(info);
+    // slide.appendChild(info);
     track.appendChild(slide);
 
     /* DOT */

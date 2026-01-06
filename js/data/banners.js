@@ -1,7 +1,7 @@
 export const banners = [
   {
     id: 'promo_a',
-    name: 'Producto A',
+    name: 'FufaStore',
     description: 'Descripción del Producto A lorem ipsum dolor sit amet consectetur adipisicing elit.',
     price: '25',
     catalogoPrice: '40',
@@ -10,7 +10,7 @@ export const banners = [
   },
   {
     id: 'promo_b',
-    name: 'Producto B',
+    name: 'Avon',
     description: 'Descripción del Producto B lorem ipsum dolor sit amet consectetur adipisicing elit.',
     price: '40',
     catalogoPrice: '60',
@@ -19,11 +19,29 @@ export const banners = [
   },
   {
     id: 'promo_c',
-    name: 'Producto C',
+    name: 'Nutura',
     description: 'Descripción del Producto C lorem ipsum dolor sit amet consectetur adipisicing elit.',
     price: '30',
     catalogoPrice: '50',
     images: ['promo_c.webp','2.webp','3.webp'],
+    referencias: [],
+  },
+  {
+    id: 'promo_d',
+    name: 'Esika',
+    description: 'Descripción del Producto C lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: '30',
+    catalogoPrice: '50',
+    images: ['promo_d.webp','2.webp','3.webp'],
+    referencias: [],
+  },
+  {
+    id: 'promo_e',
+    name: 'Cyzone',
+    description: 'Descripción del Producto C lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: '30',
+    catalogoPrice: '50',
+    images: ['promo_e.webp','2.webp','3.webp'],
     referencias: [],
   },
 ];
