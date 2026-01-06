@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+  <title>Checkout | Fufa</title>
+  <link rel="stylesheet" href="./css/checkout.css" />
+</head>
+
+<body>
+
+  <header>
+    <div class="headerContainer">
+      <a href="./index.html"><span>Fufa</span></a>
+      <!-- cartContainer se inyecta por JS -->
+    </div>
+  </header>
+
+  <main>
+    <div class="checkoutContainer">
+      <div class="listaProducto">
+        <h1>Tu carrito</h1>
+        <section class="cartList">
+          <!-- productos renderizados por JS -->
+        </section>
+      </div>
+      <section class="cartSummary">
+        <div class="summaryRow">
+          <span>Total</span>
+          <strong class="cartTotal">S/ 0</strong>
+        </div>
+
+        <button class="checkoutBtn">
+          Continuar compra
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Denisse. Todos los derechos reservados.</p>
+  </footer>
+  <script type="module" src="./js/checkout.js"></script>
+</body>
+</html>

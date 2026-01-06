@@ -1,0 +1,359 @@
+/* =========================
+   RESET & VARIABLES
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #640ec7;
+  --primary-soft: #ebdcf7;
+
+  --text-main: #222121;
+  --text-muted: #4e4c4c;
+
+  --border-soft: #b4b2b2;
+
+  --success-bg: rgba(215, 247, 236, 0.6);
+  --success-text: #065c03;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
+  --shadow-strong: 0 -4px 20px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-soft);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* =========================
+   HEADER & FOOTER
+========================= */
+header,
+footer {
+  width: 100%;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 1.2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+header .headerContainer {
+  width: 95%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 0.4rem 0;
+}
+
+/* =========================
+   BRAND (CENTER)
+========================= */
+header .headerContainer a {
+  grid-column: 2;
+  justify-self: center;
+  font-family: "Crafty Girls", cursive;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .headerContainer a span {
+  font-size: 2.8rem;
+  letter-spacing: 0.08rem;
+  user-select: none;
+}
+
+/* =========================
+   CART (RIGHT)
+========================= */
+header .headerContainer .cartContainer {
+  grid-column: 3;
+  justify-self: end;
+
+  position: relative;
+  font-size: 2.6rem;
+}
+
+header .headerContainer .cartContainer .cart {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Badge */
+header .headerContainer .cartContainer .cart-count {
+  position: absolute;
+  top: 1.5rem;
+  right: -0.8rem;
+
+  background-color: #ff13a7;
+  color: #fff;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  border-radius: 50%;
+  min-width: 1.8rem;
+  height: 1.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   PRODUCT CONTAINER
+========================= */
+.productoContainer {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* =========================
+   IMAGE / CAROUSEL (CUADRADO)
+========================= */
+.productoImgCarrousel {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+}
+
+.productoImgCarrousel .carousel-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.productoImgCarrousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.6rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.5);
+  border: none;
+}
+
+.carousel-dot.active {
+  background: #fff;
+}
+
+
+
+/* =========================
+   PRODUCT DETAILS
+========================= */
+.productoDetalles {
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.productoDetalles h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: var(--text-main);
+}
+
+.productoDescipcionContainer {
+  margin-top: 1rem;
+}
+
+.productoDescripcion {
+  font-size: 1.45rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.otrosPrecios {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+.catalogo {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  padding: 0.3rem 0.7rem;
+}
+
+.productoPrecio {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+}
+
+/* =========================
+   CONSIDERATIONS
+========================= */
+.consideraciones {
+  margin-top: 1.2rem;
+  padding-left: 1.2rem;
+}
+
+.tren,
+.delivery {
+  font-size: 1.2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-sm);
+  width: fit-content;
+  margin-bottom: 0.5rem;
+}
+
+.tren {
+  background-color: var(--success-bg);
+  color: var(--success-text);
+}
+
+.delivery {
+  background-color: #f3f3f35e;
+  color: #555;
+}
+
+/* =========================
+   MARKETING SECTION
+========================= */
+.productMarketing {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.productMarketing h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.productMarketing img {
+  width: 100%;
+  height: 280px;
+  background-color: #d9d9d9;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+  object-fit: cover;
+  box-shadow: var(--shadow-soft);
+}
+
+/* =========================
+   PURCHASE BAR
+========================= */
+.compraContainer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: var(--primary);
+  box-shadow: var(--shadow-strong);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.botones {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.cantidad {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: var(--radius-sm);
+  padding: 0.8rem;
+  margin-right: 1rem;
+  border: 1px solid var(--border-soft);
+}
+
+.cantidad button {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.cantidad button:hover {
+  transform: scale(1.15);
+}
+
+.cantidad span {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.agregarCarrito {
+  width: 75%;
+  background-color: #fff;
+  color: var(--primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.agregarCarrito:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border: 1px solid #fff;
+}
