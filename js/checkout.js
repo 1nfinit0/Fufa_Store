@@ -1,5 +1,6 @@
 import { getCart, saveCart } from './cart/cart_storage.js';
 import { injectCartIntoHeader, updateCartCount } from './cart/cart_ui.js';
+import { BASE_PATH } from './config.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   injectCartIntoHeader();
@@ -25,36 +26,35 @@ function renderCheckout() {
   let total = 0;
 
   cart.forEach(item => {
-  total += item.price * item.quantity;
+    total += item.price * item.quantity;
 
-  const basePath = `/assets/products/${item.id}/`;
-  const imageSrc = basePath + item.image[0];
+    const imageSrc =
+      `${BASE_PATH}assets/products/${item.id}/${item.image[0]}`;
 
+    const row = document.createElement('div');
+    row.className = 'cartItem';
 
-  const row = document.createElement('div');
-  row.className = 'cartItem';
+    row.innerHTML = `
+      <img src="${imageSrc}" alt="${item.name}">
+      <div class="cartItemInfo">
+        <h3>${item.name}</h3>
+        <span>S/ ${item.price} × ${item.quantity}</span>
+      </div>
+      <div class="cartItemActions">
+        <button class="minus">−</button>
+        <span>${item.quantity}</span>
+        <button class="plus">+</button>
+        <button class="remove">✕</button>
+      </div>
+    `;
 
-  row.innerHTML = `
-    <img src="${imageSrc}" alt="${item.name}">
-    <div class="cartItemInfo">
-      <h3>${item.name}</h3>
-      <span>S/ ${item.price} × ${item.quantity}</span>
-    </div>
-    <div class="cartItemActions">
-      <button class="minus">−</button>
-      <span>${item.quantity}</span>
-      <button class="plus">+</button>
-      <button class="remove">✕</button>
-    </div>
-  `;
-
-  attachActions(row, item.id);
-  cartList.appendChild(row);
-});
-
+    attachActions(row, item.id);
+    cartList.appendChild(row);
+  });
 
   totalEl.textContent = `S/ ${total}`;
 }
+
 
 /* =========================
    ACTIONS
