@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 :root {
@@ -286,4 +288,10 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 200px; /* Altura mínima para mantener el layout */
+}
+.checkoutBtn,
+.cartItemActions button,
+.product-card {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }

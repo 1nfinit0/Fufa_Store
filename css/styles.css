@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 html {
@@ -293,4 +295,9 @@ main h1 {
 footer {
   margin-top: auto;
   font-size: 1.3rem;
+}
+
+a, button {
+  -webkit-tap-highlight-color: transparent; /* iOS Safari */
+  outline: none; /* Evita el borde azul en algunos navegadores */
 }
