@@ -53,7 +53,7 @@ export function initAddToCart(product) {
 
   const getQuantity = initQuantityControls();
 
-  button.addEventListener('click', () => {
+  function handleAddToCart() {
     const cart = getCart();
     const quantity = getQuantity();
 
@@ -76,9 +76,15 @@ export function initAddToCart(product) {
 
     saveCart(cart);
     updateCartCount();
+
+    button.removeEventListener('click', handleAddToCart);
+
     switchToGoCart(button);
-  });
+  }
+
+  button.addEventListener('click', handleAddToCart);
 }
+
 
 /* =========================
    UI STATES
@@ -89,4 +95,5 @@ function switchToGoCart(button) {
     window.location.href = `${BASE_PATH}checkout.html`;
   };
 }
+
 
