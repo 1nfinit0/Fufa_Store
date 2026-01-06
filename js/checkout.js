@@ -20,8 +20,10 @@ function renderCheckout() {
   if (!cart.length) {
     cartList.innerHTML = '<p>Tu carrito está vacío</p>';
     totalEl.textContent = 'S/ 0';
+    setupCheckoutButton(cart, 0);
     return;
   }
+
 
   let total = 0;
 
@@ -53,6 +55,7 @@ function renderCheckout() {
   });
 
   totalEl.textContent = `S/ ${total}`;
+  setupCheckoutButton(cart, total);
 }
 
 
@@ -74,6 +77,57 @@ function attachActions(row, productId) {
     removeItem(productId);
   });
 }
+
+function generateOrderCode() {
+  const now = new Date();
+
+  const dd = String(now.getDate()).padStart(2, '0');
+  const mm = String(now.getMonth() + 1).padStart(2, '0');
+  const yy = String(now.getFullYear()).slice(-2);
+  const rnd = Math.floor(1000 + Math.random() * 9000);
+
+  return `${dd}/${mm}/${yy}/${rnd}`;
+}
+function buildWhatsappMessage(cart, total, orderCode) {
+  let message = `🛍️ *NUEVO PEDIDO*\n\n`;
+  message += `📦 *Código:* ${orderCode}\n\n`;
+  message += `🧾 *Detalle del pedido:*\n\n`;
+
+  cart.forEach(item => {
+    message += `• ${item.name}\n`;
+    message += `  Cantidad: ${item.quantity}\n`;
+    message += `  Precio: S/ ${item.price}\n\n`;
+  });
+
+  message += `💰 *Total:* S/ ${total}\n\n`;
+
+  return encodeURIComponent(message);
+}
+
+function setupCheckoutButton(cart, total) {
+  const btn = document.querySelector('.checkoutBtn');
+  if (!btn) return;
+
+  if (!cart.length) {
+    btn.textContent = 'Aún no tienes productos';
+    btn.disabled = true;
+    return;
+  }
+
+  btn.textContent = 'Hacer pedido';
+  btn.disabled = false;
+
+  btn.onclick = () => {
+    const orderCode = generateOrderCode();
+    const message = buildWhatsappMessage(cart, total, orderCode);
+
+    const phone = '51922917150';
+    const url = `https://wa.me/${phone}?text=${message}`;
+
+    window.open(url, '_blank');
+  };
+}
+
 
 
 function updateQty(productId, delta) {
@@ -105,3 +159,4 @@ function removeItem(productId) {
   updateCartCount();
   renderCheckout();
 }
+
