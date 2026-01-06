@@ -1,3 +1,5 @@
+import { BASE_PATH } from '../config.js';
+
 export function createProductCarousel({
   containerSelector,
   products
@@ -14,14 +16,12 @@ export function createProductCarousel({
   products.forEach(product => {
     const card = document.createElement('a');
     card.className = 'product-card';
-    card.href = `/producto.html?id=${encodeURIComponent(product.id)}`;
+    card.href = `${BASE_PATH}producto.html?id=${encodeURIComponent(product.id)}`;
 
     const img = document.createElement('img');
-
-    img.src = `/assets/products/${product.id}/${product.id}.jpg`;
+    img.src = `${BASE_PATH}assets/products/${product.id}/${product.id}.jpg`;
     img.alt = product.name;
     img.loading = 'lazy';
-
 
     const info = document.createElement('div');
     info.className = 'product-info';

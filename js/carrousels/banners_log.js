@@ -1,4 +1,6 @@
 import { banners } from '../data/banners.js';
+import { BASE_PATH } from '../config.js';
+
 
 export function loadBannerCarousel() {
   const bannersContainer = document.querySelector('.banners');
@@ -25,13 +27,13 @@ export function loadBannerCarousel() {
   banners.forEach((banner, i) => {
     const slide = document.createElement('a');
     slide.className = 'carousel-slide';
-    slide.href = `/producto.html?id=${encodeURIComponent(banner.id)}`;
+    slide.href = `${BASE_PATH}producto.html?id=${encodeURIComponent(banner.id)}`;
     slide.setAttribute('aria-label', banner.title);
 
     const img = document.createElement('img');
 
     /* Imagen principal derivada del id */
-    img.src = `/assets/products/${banner.id}/${banner.id}.webp`;
+    img.src = `${BASE_PATH}assets/products/${banner.id}/${banner.id}.webp`;
     img.alt = banner.name;
     img.loading = 'lazy';
 
