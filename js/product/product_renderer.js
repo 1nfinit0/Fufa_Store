@@ -1,3 +1,5 @@
+import { BASE_PATH } from '../config.js';
+
 export function renderProduct(product) {
   document.title = product.name || 'Producto';
 
@@ -12,7 +14,7 @@ export function renderProduct(product) {
   dots.innerHTML = '';
 
   let currentIndex = 0;
-  const basePath = `/assets/products/${product.id}/`;
+  const basePath = `${BASE_PATH}assets/products/${product.id}/`;
 
   product.images.forEach((imgName, i) => {
     const img = document.createElement('img');

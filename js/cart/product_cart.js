@@ -6,6 +6,8 @@ import {
 } from './cart_storage.js';
 
 import { updateCartCount } from './cart_ui.js';
+import { BASE_PATH } from '../config.js';
+
 
 /* =========================
    QUANTITY CONTROL
@@ -84,6 +86,7 @@ export function initAddToCart(product) {
 function switchToGoCart(button) {
   button.textContent = 'Ir al carrito';
   button.onclick = () => {
-    window.location.href = './checkout.html';
+    window.location.href = `${BASE_PATH}checkout.html`;
   };
 }
+
