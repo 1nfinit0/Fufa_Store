@@ -75,4 +75,92 @@ export function renderProduct(product) {
   } else {
     catalogo.style.display = 'none';
   }
+
+
+    /* =========================
+     MARKETING / REFERENCIAS
+  ========================= */
+  const marketingContainer = document.querySelector('.marketingMedia');
+  marketingContainer.innerHTML = '';
+
+  if (!product.referencias || !product.referencias.length) {
+    marketingContainer.parentElement.style.display = 'none';
+    return;
+  }
+
+  const videos = [];
+
+  product.referencias.forEach(videoName => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'marketingVideoWrapper';
+
+    const video = document.createElement('video');
+    video.src = `${basePath}${videoName}`;
+    video.muted = true;
+    video.loop = true;
+    video.playsInline = true;
+    video.preload = 'metadata';
+    video.className = 'marketingVideo';
+
+    const muteBtn = document.createElement('button');
+    muteBtn.className = 'videoMuteBtn';
+    muteBtn.textContent = '🔇';
+
+    muteBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      muteBtn.textContent = video.muted ? '🔇' : '🔊';
+    });
+
+    wrapper.appendChild(video);
+    wrapper.appendChild(muteBtn);
+    marketingContainer.appendChild(wrapper);
+
+    videos.push(video);
+  });
+
+  /* =========================
+     AUTOPLAY INTELIGENTE
+  ========================= */
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        const video = entry.target;
+
+        if (entry.isIntersecting && entry.intersectionRatio > 0.6) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      });
+    },
+    {
+      threshold: [0.6] 
+    }
+  );
+
+  videos.forEach(video => observer.observe(video));
+
+  let userInteracted = false;
+
+function enableSoundOnInteraction() {
+  if (userInteracted) return;
+
+  userInteracted = true;
+
+  document.querySelectorAll('.marketingVideo').forEach(video => {
+  video.muted = false;
+  video.parentElement
+    .querySelector('.videoMuteBtn')
+    .textContent = '🔊';
+});
+
+
+  document.removeEventListener('touchstart', enableSoundOnInteraction);
+  document.removeEventListener('click', enableSoundOnInteraction);
+}
+
+document.addEventListener('touchstart', enableSoundOnInteraction, { once: true });
+document.addEventListener('click', enableSoundOnInteraction, { once: true });
+
+
 }

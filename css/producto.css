@@ -359,3 +359,36 @@ main {
   color: #fff;
   border: 1px solid #fff;
 }
+
+.marketingMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.marketingVideoWrapper {
+  position: relative;
+}
+
+.marketingVideo {
+  width: 100%;
+  border-radius: 12px;
+  background: #000;
+}
+
+/* Botón mute */
+.videoMuteBtn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
