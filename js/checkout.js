@@ -121,7 +121,7 @@ function setupCheckoutButton(cart, total) {
     const orderCode = generateOrderCode();
     const message = buildWhatsappMessage(cart, total, orderCode);
 
-    const phone = '51922917150';
+    const phone = '51997913969';
     const url = `https://wa.me/${phone}?text=${message}`;
 
     window.open(url, '_blank');
