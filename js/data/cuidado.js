@@ -35,4 +35,32 @@ export const cuidado = [
     images: ['cuidado_d.jpg','2.png','3.jpeg'],
     referencias: ['a.mp4','b.mp4','c.mp4'],
   },
+  {
+    id: 'cuidado_e',
+    name: 'Loción Corporal Perfumada Sweet Black 130 ml Cyzone',
+    description: 'Loción hidratante corporal con irresistible aroma oriental dulce. Hidrata tu piel mientras disfrutas de tu fragancia favorita todo el día. Su formato práctico te permite llevarla siempre contigo. Perfecta para aplicar después de la ducha o cuando necesites hidratación extra.',
+    price: '18',
+    catalogoPrice: '40',
+    images: ['cuidado_e.jpg','2.webp','3.jpg'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+  {
+    id: 'cuidado_f',
+    name: 'Loción Corporal Perfumada Sweet Black Intense 130 ml Cyzone',
+    description: 'Loción hidratante corporal con irresistible aroma oriental dulce. Hidrata tu piel mientras disfrutas de tu fragancia favorita todo el día. Su formato práctico te permite llevarla siempre contigo. Perfecta para aplicar después de la ducha o cuando necesites hidratación extra.',
+    price: '18',
+    catalogoPrice: '44',
+    images: ['cuidado_f.jpg','2.png','3.jpg'],
+    referencias: ['a.mp4'],
+  },
+  {
+    id: 'cuidado_g',
+    name: 'Loción Corporal Perfumada Y25 130 ml Cyzone',
+    description: ' La crema corporal perfumada Y25 dejará tu piel hidratada hasta por 24 horas. Con su aroma único que se adapta a tu piel, esta crema hidratante envuelve cada aplicación en un aroma único y adaptativo que realza tu esencia personal. ¡Celebra el poder de ser tú!',
+    price: '18',
+    catalogoPrice: '44',
+    images: ['cuidado_g.jpg','2.jpg','3.png'],
+    referencias: ['a.mp4', 'b.mp4'],
+  },
+  
 ];

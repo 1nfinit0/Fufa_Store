@@ -8,13 +8,4 @@ export const perfumes = [
     images: ['perfume_a.jpg','2.jpeg','3.webp'],
     referencias: ['a.mp4','b.mp4','c.mp4'],
   },
-  {
-    id: 'perfume_b',
-    name: 'Loción Hidratante Perfumada Sweet Black 130 ml Cyzone',
-    description: 'Loción hidratante corporal con irresistible aroma oriental dulce. Hidrata tu piel mientras disfrutas de tu fragancia favorita todo el día. Su formato práctico te permite llevarla siempre contigo. Perfecta para aplicar después de la ducha o cuando necesites hidratación extra.',
-    price: '20',
-    catalogoPrice: '57',
-    images: ['perfume_b.jpg','2.webp','3.jpg'],
-    referencias: ['a.mp4','b.mp4','c.mp4'],
-  },
 ];
