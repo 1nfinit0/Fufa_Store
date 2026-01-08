@@ -3,7 +3,7 @@ import { createProductCarousel } from './carrousels/producto.js';
 import { injectCartIntoHeader } from './cart/cart_ui.js';
 
 
-import { cremas } from './data/cremas.js';
+import { cuidado } from './data/cuidado.js';
 import { perfumes } from './data/perfumes.js';
 import { cosmeticos } from './data/cosmeticos.js';
 
@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   loadBannerCarousel();
 
   createProductCarousel({
-    containerSelector: '#cremas',
-    products: cremas
+    containerSelector: '#cuidado',
+    products: cuidado
   });
 
   createProductCarousel({
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   createProductCarousel({
-    containerSelector: '#maquillajes',
+    containerSelector: '#proteccion',
     products: cosmeticos
   });
 

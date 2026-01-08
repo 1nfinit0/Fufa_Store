@@ -1,11 +1,11 @@
 import { banners } from './banners.js';
-import { cremas } from './cremas.js';
+import { cuidado } from './cuidado.js';
 import { perfumes } from './perfumes.js';
 import { cosmeticos } from './cosmeticos.js';
 
 const collections = {
   banners,
-  cremas,
+  cuidado,
   perfumes,
   cosmeticos
 };

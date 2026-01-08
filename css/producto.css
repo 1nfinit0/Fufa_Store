@@ -179,12 +179,12 @@ main {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.5);
+  background: rgba(190, 190, 190, 0.5);
   border: none;
 }
 
 .carousel-dot.active {
-  background: #fff;
+  background: #949090;
 }
 
 
@@ -198,7 +198,7 @@ main {
 }
 
 .productoDetalles h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   color: var(--text-main);
 }
@@ -208,7 +208,7 @@ main {
 }
 
 .productoDescripcion {
-  font-size: 1.45rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   color: var(--text-muted);
 }
@@ -219,7 +219,7 @@ main {
 }
 
 .catalogo {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: var(--text-muted);
   border: 1px solid var(--border-soft);
   border-radius: var(--radius-sm);
@@ -386,9 +386,9 @@ main {
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 38px;
-  height: 38px;
-  font-size: 1.6rem;
+  width: 48px;
+  height: 48px;
+  font-size: 2rem;
   cursor: pointer;
 }
 

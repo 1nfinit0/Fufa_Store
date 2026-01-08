@@ -1,0 +1,38 @@
+export const cuidado = [
+  {
+    id: 'cuidado_a',
+    name: 'Avon Care Crema Corporal Aceite De Jojoba Y Karité | 400 ml',
+    description: 'Crema corporal con Aceite de Jojoba y Manteca de Karité que proporciona hidratación profunda por 48 horas. Textura ligera pero nutritiva, ideal para piel reseca por sol o piscina. Perfecta para el cuidado diario de tu piel durante el verano.',
+    price: '20',
+    catalogoPrice: '48.90',
+    images: ['cuidado_a.jpg','2.webp','3.webp'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+  {
+    id: 'cuidado_b',
+    name: 'Kit de 4 Jabones EKOS | 100 gr',
+    description: 'Set de 4 jabones EKOS de 100gr cada uno, formulados con ingredientes naturales brasileños. Limpieza suave y nutritiva que respeta el pH natural de la piel. Fragancias únicas inspiradas en la biodiversidad amazónica. Ideal para el cuidado diario corporal y facial.',
+    price: '35',
+    catalogoPrice: '50',
+    images: ['cuidado_b.jpg','2.jpg','3.jpg'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+  {
+    id: 'cuidado_c',
+    name: 'Ekos Pulpa Hidratante Corporal Ucuuba | 400 ml',
+    description: 'Pulpa hidratante corporal con manteca de ucuuba amazónica que reafirma y mejora la elasticidad de la piel. Estimula la producción natural de colágeno proporcionando firmeza visible. Hidratación profunda con resultados en 3 días.',
+    price: '40',
+    catalogoPrice: '69',
+    images: ['cuidado_c.jpg','2.jpg','3.webp'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+  {
+    id: 'cuidado_d',
+    name: 'Kit Tododia Flor de Pera y Melisa | Crema Corporal 100 ml + Crema de Manos 50 ml',
+    description: 'Una combinación delicada y refrescante con el aroma suave de la flor de pera y la calma herbal de la melissa. La colonia aporta frescura ligera ideal para el uso diario, dejando una fragancia suave, femenina y relajante.',
+    price: '30',
+    catalogoPrice: '69',
+    images: ['cuidado_d.jpg','2.png','3.jpeg'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+];
