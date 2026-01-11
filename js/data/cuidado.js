@@ -2,7 +2,7 @@ export const cuidado = [
   {
     id: 'cuidado_a',
     name: 'Avon Care Crema Corporal Aceite De Jojoba Y Karité | 400 ml',
-    description: 'Crema corporal con Aceite de Jojoba y Manteca de Karité que proporciona hidratación profunda por 48 horas. Textura ligera pero nutritiva, ideal para piel reseca por sol o piscina. Perfecta para el cuidado diario de tu piel durante el verano.',
+    description: 'Crema corporal con Aceite de Jojoba y Manteca de Karité que proporciona hidratación profunda por 48 horas. Textura ligera pero nutritiva, ideal para piel reseca por sol o piscina.',
     price: '20',
     catalogoPrice: '48.90',
     images: ['cuidado_a.jpg','2.webp','3.webp'],
@@ -11,7 +11,7 @@ export const cuidado = [
   {
     id: 'cuidado_b',
     name: 'Kit de 4 Jabones EKOS | 100 gr',
-    description: 'Set de 4 jabones EKOS de 100gr cada uno, formulados con ingredientes naturales brasileños. Limpieza suave y nutritiva que respeta el pH natural de la piel. Fragancias únicas inspiradas en la biodiversidad amazónica. Ideal para el cuidado diario corporal y facial.',
+    description: 'Set de 4 jabones EKOS de 100gr cada uno, formulados con ingredientes naturales brasileños. Limpieza suave que respeta el pH natural de la piel con fragancias amazónicas.',
     price: '35',
     catalogoPrice: '50',
     images: ['cuidado_b.jpg','2.jpg','3.jpg'],
@@ -20,7 +20,7 @@ export const cuidado = [
   {
     id: 'cuidado_c',
     name: 'Ekos Pulpa Hidratante Corporal Ucuuba | 400 ml',
-    description: 'Pulpa hidratante corporal con manteca de ucuuba amazónica que reafirma y mejora la elasticidad de la piel. Estimula la producción natural de colágeno proporcionando firmeza visible. Hidratación profunda con resultados en 3 días.',
+    description: 'Pulpa hidratante con manteca de ucuuba amazónica que reafirma y mejora la elasticidad de la piel. Estimula la producción natural de colágeno con resultados visibles en 3 días.',
     price: '40',
     catalogoPrice: '69',
     images: ['cuidado_c.jpg','2.jpg','3.webp'],
@@ -29,7 +29,7 @@ export const cuidado = [
   {
     id: 'cuidado_d',
     name: 'Kit Tododia Flor de Pera y Melisa | Crema Corporal 100 ml + Crema de Manos 50 ml',
-    description: 'Una combinación delicada y refrescante con el aroma suave de la flor de pera y la calma herbal de la melissa. La colonia aporta frescura ligera ideal para el uso diario, dejando una fragancia suave, femenina y relajante.',
+    description: 'Combinación delicada con aroma de flor de pera y melissa. Fragancia suave, femenina y relajante ideal para uso diario.',
     price: '30',
     catalogoPrice: '69',
     images: ['cuidado_d.jpg','2.png','3.jpeg'],
@@ -38,7 +38,7 @@ export const cuidado = [
   {
     id: 'cuidado_e',
     name: 'Loción Corporal Perfumada Sweet Black 130 ml Cyzone',
-    description: 'Loción hidratante corporal con irresistible aroma oriental dulce. Hidrata tu piel mientras disfrutas de tu fragancia favorita todo el día. Su formato práctico te permite llevarla siempre contigo. Perfecta para aplicar después de la ducha o cuando necesites hidratación extra.',
+    description: 'Loción hidratante corporal con aroma oriental dulce. Hidrata la piel mientras disfrutas de tu fragancia favorita todo el día. Formato práctico para llevar contigo.',
     price: '18',
     catalogoPrice: '40',
     images: ['cuidado_e.jpg','2.webp','3.jpg'],
@@ -47,7 +47,7 @@ export const cuidado = [
   {
     id: 'cuidado_f',
     name: 'Loción Corporal Perfumada Sweet Black Intense 130 ml Cyzone',
-    description: 'Loción hidratante corporal con irresistible aroma oriental dulce. Hidrata tu piel mientras disfrutas de tu fragancia favorita todo el día. Su formato práctico te permite llevarla siempre contigo. Perfecta para aplicar después de la ducha o cuando necesites hidratación extra.',
+    description: 'Loción hidratante corporal con aroma oriental dulce intenso. Hidrata la piel con fragancia duradera todo el día. Formato práctico para uso diario.',
     price: '18',
     catalogoPrice: '44',
     images: ['cuidado_f.jpg','2.png','3.jpg'],
@@ -56,11 +56,19 @@ export const cuidado = [
   {
     id: 'cuidado_g',
     name: 'Loción Corporal Perfumada Y25 130 ml Cyzone',
-    description: ' La crema corporal perfumada Y25 dejará tu piel hidratada hasta por 24 horas. Con su aroma único que se adapta a tu piel, esta crema hidratante envuelve cada aplicación en un aroma único y adaptativo que realza tu esencia personal. ¡Celebra el poder de ser tú!',
+    description: 'Crema corporal perfumada Y25 que hidrata hasta por 24 horas. Aroma único y adaptativo que se ajusta a tu piel y realza tu esencia personal.',
     price: '18',
     catalogoPrice: '44',
     images: ['cuidado_g.jpg','2.jpg','3.png'],
     referencias: ['a.mp4', 'b.mp4'],
   },
-  
+  {
+    id: 'cuidado_h',
+    name: 'Limpiador Exfoliante Gel Body Spa Uña De Gato Uña De Gato + Crema de Manos',
+    description: 'Exfoliante en gel con extractos naturales de Uña de Gato que elimina células muertas y renueva la piel. Textura ligera que deja la piel suave, fresca y radiante. Apto para todo tipo de piel.',
+    price: '55',
+    catalogoPrice: '69',
+    images: ['cuidado_h.jpg','2.webp','3.png'],
+    referencias: ['a.mp4', 'b.mp4', 'c.mp4'],
+  },
 ];
