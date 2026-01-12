@@ -15,3 +15,4 @@ export function renderNotFound() {
     <a href="./index.html">Volver al inicio</a>
   `;
 }
+
