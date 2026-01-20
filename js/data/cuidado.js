@@ -9,15 +9,6 @@ export const cuidado = [
     referencias: ['a.mp4','b.mp4','c.mp4'],
   },
   {
-    id: 'cuidado_b',
-    name: 'Kit de 4 Jabones EKOS | 100 gr',
-    description: 'Set de 4 jabones EKOS de 100gr cada uno, formulados con ingredientes naturales brasileños. Limpieza suave que respeta el pH natural de la piel con fragancias amazónicas.',
-    price: '35',
-    catalogoPrice: '50',
-    images: ['cuidado_b.jpg','2.jpg','3.jpg'],
-    referencias: ['a.mp4','b.mp4','c.mp4'],
-  },
-  {
     id: 'cuidado_c',
     name: 'Ekos Pulpa Hidratante Corporal Ucuuba | 400 ml',
     description: 'Pulpa hidratante con manteca de ucuuba amazónica que reafirma y mejora la elasticidad de la piel. Estimula la producción natural de colágeno con resultados visibles en 3 días.',
@@ -61,14 +52,5 @@ export const cuidado = [
     catalogoPrice: '44',
     images: ['cuidado_g.jpg','2.jpg','3.png'],
     referencias: ['a.mp4', 'b.mp4'],
-  },
-  {
-    id: 'cuidado_h',
-    name: 'Limpiador Exfoliante Gel Body Spa Uña De Gato Uña De Gato + Crema de Manos',
-    description: 'Exfoliante en gel con extractos naturales de Uña de Gato que elimina células muertas y renueva la piel. Textura ligera que deja la piel suave, fresca y radiante. Apto para todo tipo de piel.',
-    price: '55',
-    catalogoPrice: '69',
-    images: ['cuidado_h.jpg','2.webp','3.png'],
-    referencias: ['a.mp4', 'b.mp4', 'c.mp4'],
-  },
+  },  
 ];
