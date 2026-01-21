@@ -1,5 +1,14 @@
 import { BASE_PATH } from '../config.js';
 
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
 export function createProductCarousel({
   containerSelector,
   products
@@ -13,13 +22,16 @@ export function createProductCarousel({
   const track = document.createElement('div');
   track.className = 'product-track';
 
-  products.forEach(product => {
+  
+  const randomizedProducts = shuffleArray(products);
+
+  randomizedProducts.forEach(product => {
     const card = document.createElement('a');
     card.className = 'product-card';
     card.href = `${BASE_PATH}producto.html?id=${encodeURIComponent(product.id)}`;
 
     const img = document.createElement('img');
-    img.src = `${BASE_PATH}assets/products/${product.id}/${product.id}.jpg`;
+    img.src = `${BASE_PATH}assets/products/${product.id}/${product.images?.[0] ?? `${product.id}.jpg`}`;
     img.alt = product.name;
     img.loading = 'lazy';
 
