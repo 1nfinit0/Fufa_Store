@@ -69,6 +69,6 @@ export const cuidado = [
     price: '27',
     catalogoPrice: '46',
     images: ['cuidado_i.jpg','2.jpg','3.png'],
-    referencias: ['a.mp4', 'b.mp4', 'c.mp4'],
+    referencias: ['a.mp4', 'b.mp4'],
   },  
 ];
