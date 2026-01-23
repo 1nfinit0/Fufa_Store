@@ -17,4 +17,22 @@ export const perfumes = [
     images: ['perfume_b.jpg','2.jpg','3.webp'],
     referencias: ['a.mp4','b.mp4','c.mp4'],
   },
+  {
+    id: 'perfume_c',
+    name: 'Labial Barra Mate Studio Look Cyzone Burn Nude Burn Nude',
+    description: '¡El Labial en barra Supermate Lips es tu aliado perfecto para añadir color a todos tus looks! Su acabado Powder Mate se desliza suavemente en tus labios, con hidratación gracias a geles de agua y manteca de mango africano, componentes emolientes que suavizan los labios y retienen el agua sobre estos para mejorar la hidratación. Larga duración hasta por 13 horas.',
+    price: '12.5',
+    catalogoPrice: '22.90',
+    images: ['perfume_c.jpg','2.webp','3.jpg'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
+  {
+    id: 'perfume_d',
+    name: 'Rímel Máscara de Pestañas Magnetic Lash Studio Look Cyzone negro',
+    description: 'Despierta y descubre la revolucionaria Máscara de pestañas Magnetic Lash de Studio Look. Olvídate de las pestañas postizas incómodas y del rímel que se corre, esta máscara de pestañas largas te ofrece una mirada magnética irresistible con resultados de salón, ¡en casa!',
+    price: '20',
+    catalogoPrice: '25.90',
+    images: ['perfume_d.jpg','lash2.webp','lash3.webp','lash4.webp'],
+    referencias: ['a.mp4','b.mp4','c.mp4'],
+  },
 ];

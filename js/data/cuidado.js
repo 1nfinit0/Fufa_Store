@@ -52,5 +52,23 @@ export const cuidado = [
     catalogoPrice: '44',
     images: ['cuidado_g.jpg','2.jpg','3.png'],
     referencias: ['a.mp4', 'b.mp4'],
+  },
+  {
+    id: 'cuidado_h',
+    name: 'Crema de manos Pitanga 75 ml, Ekos, Natura',
+    description: 'Pulpa hidratante ligera con aceite esencial de pitanga que brinda hidratación inmediata y prolongada. De rápida absorción, deja las manos suaves, uñas saludables y un delicado perfume refrescante. Formulada con 98% de origen natural y 94% vegetal. Ideal para quienes buscan piel suave y perfumada, en presentación de 75g.',
+    price: '25',
+    catalogoPrice: '45',
+    images: ['cuidado_g.jpg','2.jpg','3.webp'],
+    referencias: ['a.mp4', 'b.mp4', 'c.mp4'],
+  },
+  {
+    id: 'cuidado_i',
+    name: 'Crema De Manos Natura Ekos 75 G Hidratante Aroma Maracuyá',
+    description: 'Crema de manos con aceite bruto de maracuyá, rica en ácidos grasos esenciales. Ofrece 48 horas de hidratación prolongada y efecto calmante antiestrés. Textura ligera de rápida absorción que forma una película protectora sobre la piel. Presentación en nuevo empaque 100% de aluminio reciclado.',
+    price: '27',
+    catalogoPrice: '46',
+    images: ['cuidado_i.jpg','2.jpg','3.png'],
+    referencias: ['a.mp4', 'b.mp4', 'c.mp4'],
   },  
 ];
