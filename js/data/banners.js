@@ -1,5 +1,14 @@
 export const banners = [
   {
+    id: 'promo_a1',
+    name: 'Sorteo',
+    description: 'Descripción del Producto A lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    price: '25',
+    catalogoPrice: '40',
+    images: ['promo_a1.webp','2.webp','3.webp'],
+    referencias: [],
+  },
+  {
     id: 'promo_a',
     name: 'FufaStore',
     description: 'Descripción del Producto A lorem ipsum dolor sit amet consectetur adipisicing elit.',
