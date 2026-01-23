@@ -302,6 +302,71 @@ main h1 {
 }
 
 /* =========================
+   PROMOCION FLOTANTE
+========================= */
+
+.promoFlotante {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 100%;
+  max-width: 500px;
+  margin-inline: auto;
+  padding: 1rem;
+
+  left: 0;
+  right: 0;
+
+  background: #fff;
+  border-radius: 0.8rem;
+  z-index: 1001;
+  box-sizing: border-box;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.promoOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.promoFlotante img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.6rem;
+}
+
+.promoFlotante button {
+  position: absolute;
+  bottom: -10px;
+  right: 45%;
+
+  background: #ff13a7;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  line-height: 1;
+
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+
+
+/* =========================
    FOOTER
 ========================= */
 footer {
