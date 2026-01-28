@@ -1,13 +1,13 @@
 export const cuidado = [
-  {
-    id: 'cuidado_a',
-    name: 'Avon Care Crema Corporal Aceite De Jojoba Y Karité | 400 ml',
-    description: 'Crema corporal con Aceite de Jojoba y Manteca de Karité que proporciona hidratación profunda por 48 horas. Textura ligera pero nutritiva, ideal para piel reseca por sol o piscina.',
-    price: '20',
-    catalogoPrice: '48.90',
-    images: ['cuidado_a.jpg','2.webp','3.webp'],
-    referencias: ['a.mp4','b.mp4','c.mp4'],
-  },
+  // {
+  //   id: 'cuidado_a',
+  //   name: 'Avon Care Crema Corporal Aceite De Jojoba Y Karité | 400 ml',
+  //   description: 'Crema corporal con Aceite de Jojoba y Manteca de Karité que proporciona hidratación profunda por 48 horas. Textura ligera pero nutritiva, ideal para piel reseca por sol o piscina.',
+  //   price: '20',
+  //   catalogoPrice: '48.90',
+  //   images: ['cuidado_a.jpg','2.webp','3.webp'],
+  //   referencias: ['a.mp4','b.mp4','c.mp4'],
+  // },
   {
     id: 'cuidado_c',
     name: 'Ekos Pulpa Hidratante Corporal Ucuuba | 400 ml',
@@ -44,15 +44,15 @@ export const cuidado = [
     images: ['cuidado_f.jpg','2.png','3.jpg'],
     referencias: ['a.mp4'],
   },
-  {
-    id: 'cuidado_g',
-    name: 'Loción Corporal Perfumada Y25 130 ml Cyzone',
-    description: 'Crema corporal perfumada Y25 que hidrata hasta por 24 horas. Aroma único y adaptativo que se ajusta a tu piel y realza tu esencia personal.',
-    price: '18',
-    catalogoPrice: '44',
-    images: ['cuidado_g.jpg','2.jpg','3.png'],
-    referencias: ['a.mp4', 'b.mp4'],
-  },
+  // {
+  //   id: 'cuidado_g',
+  //   name: 'Loción Corporal Perfumada Y25 130 ml Cyzone',
+  //   description: 'Crema corporal perfumada Y25 que hidrata hasta por 24 horas. Aroma único y adaptativo que se ajusta a tu piel y realza tu esencia personal.',
+  //   price: '18',
+  //   catalogoPrice: '44',
+  //   images: ['cuidado_g.jpg','2.jpg','3.png'],
+  //   referencias: ['a.mp4', 'b.mp4'],
+  // },
   {
     id: 'cuidado_h',
     name: 'Crema de manos Pitanga 75 ml, Ekos, Natura',
