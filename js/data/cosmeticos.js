@@ -1,9 +1,9 @@
 export const cosmeticos = [
   {
     id: 'cosmetico_a',
-    name: 'Bloqueador Total Block Yanbal | 140 gr',
-    description: 'Protector solar SPF 100 de 140g con protección muy alta para rostro y cuerpo. Protege contra rayos UVA, UVB, IR y luz azul con hidratación incluida. Resistente al agua y sudor, de rápida absorción. Ideal para todo tipo de piel.',
-    price: '55',
+    name: 'Bloqueador Total Block Yanbal | 80 gr',
+    description: 'Protector solar SPF 100 de 80g con protección muy alta para rostro y cuerpo. Protege contra rayos UVA, UVB, IR y luz azul con hidratación incluida. Resistente al agua y sudor, de rápida absorción. Ideal para todo tipo de piel.',
+    price: '45',
     catalogoPrice: '98.90',
     images: ['cosmetico_a.jpg','2.png','3.png'],
     referencias: ['a.mp4','b.mp4','c.mp4'],
