@@ -1,5 +1,6 @@
 import { BASE_PATH } from '../config.js';
 
+
 function shuffleArray(array) {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
