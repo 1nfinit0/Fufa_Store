@@ -19,7 +19,7 @@ export const perfumes = [
   // },
   {
     id: "perfume_c",
-    name: "Labial Barra Mate Studio Look Cyzone Burn Nude Burn Nude",
+    name: "Labial Barra Mate Studio Look Cyzone Burn Nude",
     description:
       "¡El Labial en barra Supermate Lips es tu aliado perfecto para añadir color a todos tus looks! Su acabado Powder Mate se desliza suavemente en tus labios, con hidratación gracias a geles de agua y manteca de mango africano, componentes emolientes que suavizan los labios y retienen el agua sobre estos para mejorar la hidratación. Larga duración hasta por 13 horas.",
     price: "12.5",
