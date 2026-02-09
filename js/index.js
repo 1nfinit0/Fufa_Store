@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     products: cosmeticos
   });
 
-  injectCartIntoHeader();
+  // injectCartIntoHeader();
 
 
 });
